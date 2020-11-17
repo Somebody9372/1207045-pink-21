@@ -55,24 +55,25 @@
   <main class="main">
     <section class="features">
       <h2 class="visually-hidden">Преимущеста приложения Pink</h2>
-      <p class="features__intro-text">Устали от серости мегаполиса?
+      <p class="features__text">Устали от серости мегаполиса?
       </p>
-      <p class="features__intro-text">Нам есть, что вам предложить!</p>
+      <p class="features__text">Нам есть, что вам предложить!</p>
 
-      <ul class="features__list">
-        <li class="features__item">
-          <h3 class="features__title">Поднимает настроение</h3>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+      <ul class="advantages">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
             кликов!</p>
         </li>
-        <li class="features__item">
-          <h3 class="features__title">Меняет мир вокруг</h3>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
             эффект</p>
         </li>
-        <li class="features__item">
-          <h3 class="features__title">Заводит новых друзей</h3>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
         </li>
       </ul>
     </section>
@@ -111,10 +112,8 @@
       <table class="price__table">
         <thead class="price__thead">
           <tr>
-            <th class="price__rate">
-              <!-- <td class="price__value"></td>
-            <td class="price__value"></td> -->
-            </th>
+            <th class="price__rate"></th>
+
             <th class="price__rate">
               <p class="price__value">База</p>
               <p class="price__value">1,99 USD</p>
@@ -132,21 +131,21 @@
         <tbody>
           <tr>
             <td class="price__field">Розовый фильтр</td>
-            <td class="price__field"></td>
-            <td class="price__field"></td>
-            <td class="price__field"></td>
+            <td class="price__field"><span class="visually-hidden">Оптция включена в пакет</span></td>
+            <td class="price__field"><span class="visually-hidden">Оптция включена в пакет</span></td>
+            <td class="price__field"><span class="visually-hidden">Оптция включена в пакет</span></td>
           </tr>
           <tr>
             <td class="price__field">Смайлики</td>
-            <td class="price__field"></td>
-            <td class="price__field"></td>
-            <td class="price__field"></td>
+            <td class="price__field"><span class="visually-hidden">Оптция не включена в пакет</span></td>
+            <td class="price__field"><span class="visually-hidden">Оптция включена в пакет</span></td>
+            <td class="price__field"><span class="visually-hidden">Оптция включена в пакет</span></td>
           </tr>
           <tr>
             <td class="price__field">Комментарии</td>
-            <td class="price__field"></td>
-            <td class="price__field"></td>
-            <td class="price__field"></td>
+            <td class="price__field"><span class="visually-hidden">Оптция не включена в пакет</span></td>
+            <td class="price__field"><span class="visually-hidden">Оптция не включена в пакет</span></td>
+            <td class="price__field"><span class="visually-hidden">Оптция включена в пакет</span></td>
           </tr>
         </tbody>
       </table>
@@ -154,55 +153,58 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__intro-text">Остались вопросы?Свяжитесь с нами!</p>
-      <p class="contacts__intro-text">Остались вопросы?Свяжитесь с нами!</p>
+      <p class="contacts__intro-text">Остались вопросы?</p>
+      <p class="contacts__intro-text">Свяжитесь с нами!</p>
+
       <p class="contacts__text">
         Звоните:
-        <span class="contacts__text contacts__text--red">
-          +7 (812) 555-66-66
-        </span>
       </p>
+      <a class="contacts__link">
+        +7 (812) 555-66-66
+      </a>
       <p class="contacts__text">
         Пишите:
-        <span class="contacts__text contacts__text--red">
-          mail@htmlacademy.ru
-        </span>
       </p>
+      <a class="contacts__link">
+        mail@htmlacademy.ru
+      </a>
       <p class="contacts__text">
         Приезжайте в гости:
-        <span class="contacts__text contacts__text--red">
-          ул. Большая
-          Конюшенная, 19/8
-        </span>
       </p>
+      <a class="contacts__link">
+        ул. Большая
+        Конюшенная, 19/8
+      </a>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
       <img src="" alt="Карта проезда" class="map__img">
     </section>
   </main>
 
   <footer class="footer">
-    <img src="" alt="glasses" class="footer__img">
-    <img src="" alt="Pink" class="footer__logo">
-    <ul class="footer__social">
-      <li class="footer__social-item">
-        <a href="" class="footer__social-link">
+    <a>
+      <img src="" alt="Pink" class="footer__logo">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--twitter">
           <span class="visually-hidden">Твиттер</span>
         </a>
       </li>
-      <li class="footer__social-item">
-        <a href="" class="footer__social-link">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--fb">
           <span class="visually-hidden">Фейсбук</span>
         </a>
       </li>
-      <li class="footer__social-item">
-        <a href="" class="footer__social-link">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--youtube">
           <span class="visually-hidden">youtube</span>
         </a>
       </li>
     </ul>
-    <div class="footer__developer">
-      <p class="footer__developer-text">Разработано</p>
+    <div class="developer">
+      <a class="developer__link">Разработано</a>
     </div>
   </footer>
 
