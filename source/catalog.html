@@ -18,7 +18,7 @@
           <a href="index.html" class="nav__link">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link">Фотографии</a>
+          <a class="nav__link nav__link--active">Фотографии</a>
         </li>
         <li class="nav__item">
           <a href="form.html" class="nav__link">Конкурс</a>
@@ -33,7 +33,7 @@
   </header>
 
   <main class="main">
-    <section class="slogan slogan--top">
+    <section class="slogan">
       <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
     </section>
@@ -41,73 +41,79 @@
     <section class="gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Анна</p>
-        <span class="photo__time">(5 минут назад)</span>
-        <p class="photo__text">Прыгать или нет? Напишите в
-          комментарии свой совет и
-          смотрите прямую трансляцию в
-          перископе, задавайте свои вопросы!</p>
-        <p class="photo__likes">Нравится: 215</p>
-      </div>
+      <ul class="gallery__list">
+        <li class="photo">
+          <img src="" alt="" class="photo__img"></img>
+          <p class="photo__autor">Анна</p>
+          <span class="photo__time">(5 минут назад)</span>
+          <p class="photo__text">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="photo__likes">Нравится: 215</p>
+        </li>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Левон</p>
-        <span class="photo__time">(5 часов назад)</span>
-        <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <p class="photo__likes">Нравится: 356</p>
-      </div>
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Левон</p>
+          <span class="photo__time">(5 часов назад)</span>
+          <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="photo__likes">Нравится: 356</p>
+        </li>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Антон</p>
-        <span class="photo__time">(12 часов назад)</span>
-        <p class="photo__text">Соседи будут рады!</p>
-        <p class="photo__likes">Нравится: 666</p>
-      </div>
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Антон</p>
+          <span class="photo__time">(12 часов назад)</span>
+          <p class="photo__text">Соседи будут рады!</p>
+          <p class="photo__likes">Нравится: 666</p>
+        </li>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Борис</p>
-        <span class="photo__time">(20 часов назад)</span>
-        <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <p class="photo__likes">Нравится: 215</p>
-      </div>
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Борис</p>
+          <span class="photo__time">(20 часов назад)</span>
+          <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="photo__likes">Нравится: 215</p>
+        </li>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Сергей</p>
-        <span class="photo__time">(25 часов назад)</span>
-        <p class="photo__text">Самая кубанская в мире!</p>
-        <p class="photo__likes">Нравится: 4</p>
-      </div>
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Сергей</p>
+          <span class="photo__time">(25 часов назад)</span>
+          <p class="photo__text">Самая кубанская в мире!</p>
+          <p class="photo__likes">Нравится: 4</p>
+        </li>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Максим</p>
-        <span class="photo__time">(40 часов назад)</span>
-        <p class="photo__text">Где снег-то?</p>
-        <p class="photo__likes">Нравится: 150</p>
-      </div>
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Максим</p>
+          <span class="photo__time">(40 часов назад)</span>
+          <p class="photo__text">Где снег-то?</p>
+          <p class="photo__likes">Нравится: 150</p>
+        </li>
 
-      <div class="photo">
-        <picture class="photo__img"></picture>
-        <p class="photo__autor">Надежда</p>
-        <span class="photo__time">(45 часов назад)</span>
-        <p class="photo__text">Всем GM и взаимные лайки!</p>
-        <p class="photo__likes">Нравится: 2560</p>
-      </div>
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Надежда</p>
+          <span class="photo__time">(45 часов назад)</span>
+          <p class="photo__text">Всем GM и взаимные лайки!</p>
+          <p class="photo__likes">Нравится: 2560</p>
+        </li>
+      </ul>
 
     </section>
 
-    <section class="slogan slogan--bottom">
+    <section class="slogan">
       <p class="slogan__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
 
     <section class="post">
-      <picture class="post__img"></picture>
+      <img src="" alt="" class="post__img">
+
+      <button type="button" class="post__toggle"><span class="visyally-hidden">Обрезать фото</span></button>
+      <button type="button" class="post__toggle"><span class="visyally-hidden">Заливка фото</span></button>
+      <button type="button" class="post__toggle"><span class="visyally-hidden">изменять яркость фото</span></button>
 
       <div class="range">
         <div class="range__bar"></div>
@@ -115,8 +121,8 @@
       </div>
 
       <button type="submit" class="post__button post__button--submit">Запостить</button>
+      <button type="reset" class="reset post__button post__button--reset">Отмена</button>
 
-      <button class="reset post__button post__button--reset">Отмена</button>
     </section>
   </main>
 
@@ -142,8 +148,10 @@
       </li>
     </ul>
     <div class="developer">
-      <a class="developer__link">Разработано</a>
+      <a class="developer__link">Разработано <span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 
 </body>
+
+</html>
