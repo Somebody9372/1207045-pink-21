@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a>
+        <img src="" class="nav__logo" alt="PINK" class="nav__logo">
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active">Фотографии</a>
+        </li>
+        <li class="nav__item">
+          <a href="form.html" class="nav__link">Конкурс</a>
+        </li>
+        <li class="nav__item">
+          <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="header__title">Фотографии пользователей</h1>
+  </header>
+
+  <main class="main">
+
+    <section class="gallery">
+      <h2 class="visually-hidden">Фотогалерея</h2>
+
+      <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+
+      <ul class="gallery__list">
+        <li class="photo">
+          <img src="" alt="" class="photo__img"></img>
+          <p class="photo__autor">Анна</p>
+          <span class="photo__time">(5 минут назад)</span>
+          <p class="photo__text">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="photo__likes">Нравится: 215</p>
+        </li>
+
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Левон</p>
+          <span class="photo__time">(5 часов назад)</span>
+          <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="photo__likes">Нравится: 356</p>
+        </li>
+
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Антон</p>
+          <span class="photo__time">(12 часов назад)</span>
+          <p class="photo__text">Соседи будут рады!</p>
+          <p class="photo__likes">Нравится: 666</p>
+        </li>
+
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Борис</p>
+          <span class="photo__time">(20 часов назад)</span>
+          <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="photo__likes">Нравится: 215</p>
+        </li>
+
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Сергей</p>
+          <span class="photo__time">(25 часов назад)</span>
+          <p class="photo__text">Самая кубанская в мире!</p>
+          <p class="photo__likes">Нравится: 4</p>
+        </li>
+
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Максим</p>
+          <span class="photo__time">(40 часов назад)</span>
+          <p class="photo__text">Где снег-то?</p>
+          <p class="photo__likes">Нравится: 150</p>
+        </li>
+
+        <li class="photo">
+          <img src="" alt="" class="photo__img">
+          <p class="photo__autor">Надежда</p>
+          <span class="photo__time">(45 часов назад)</span>
+          <p class="photo__text">Всем GM и взаимные лайки!</p>
+          <p class="photo__likes">Нравится: 2560</p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="post">
+      <h2 class="visyally-hidden">Обработайте и выложите вашу фотографию</h2>
+      <p class="post__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+      <img src="" alt="" class="post__img">
+
+      <button type="button" class="post__toggle"><span class="visyally-hidden">Обрезать фото</span></button>
+      <button type="button" class="post__toggle"><span class="visyally-hidden">Заливка фото</span></button>
+      <button type="button" class="post__toggle"><span class="visyally-hidden">изменять яркость фото</span></button>
+
+      <form action="echo.htmlacademy.ru" method="GET" class="post__form">
+
+        <div class="range">
+          <div class="range__bar"></div>
+          <div class="range__button"></div>
+        </div>
+
+        <button type="submit" class="post__button post__button--submit">Запостить</button>
+        <button type="reset" class="reset post__button post__button--reset">Отмена</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a>
+      <img src="" alt="Pink" class="footer__logo">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--twitter">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--fb">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--youtube">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+    <div class="developer">
+      <a class="developer__link">Разработано <span class="visually-hidden">HTML Academy</span></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
