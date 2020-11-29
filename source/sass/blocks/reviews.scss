@@ -1,7 +1,6 @@
 .reviews {
-  font-family: $OS;
-
-  padding: 50px 20px 60px 20px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .reviews__author {
@@ -10,19 +9,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-
-    padding: 0 20px 3px 20px ;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
-
-    padding: 72px 256px 41px 256px;
   }
 }
 
@@ -30,7 +25,7 @@
   margin: 0;
 
   display: none;
-  color: #283645;
+  color: $dark-blue;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -49,7 +44,7 @@
 
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $dark-blue;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

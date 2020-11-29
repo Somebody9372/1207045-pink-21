@@ -1,11 +1,14 @@
 .footer {
-  padding: 40px 74px 40px 74px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 20px 40px 20px;
+    padding-top: 36px;
+    padding-bottom: 40px;
   }
 
-  @media (min-width: $desctop-width) {
-    padding: 70px 252px 72px 252px;
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 72px;
   }
 }

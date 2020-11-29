@@ -1,8 +1,7 @@
 .developer__link {
-  font-family: $OS;
   font-size: 14px;
   line-height: 18px;
-  color: #283645;
+  color: $dark-blue;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
