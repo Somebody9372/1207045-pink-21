@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="body">
+
+  <header class="header">
+    <nav class="nav">
+      <a>
+        <img src="" class="nav__logo" alt="PINK" class="nav__logo">
+      </a>
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Фотографии</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link">Конкурс</a>
+        </li>
+        <li class="nav__item">
+          <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Поля с вашими данными,для участия в конкурсе</h1>
+    <section class="forms">
+      <p class="forms__intro">
+        Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </p>
+
+      <form action="echo.htmlacademy.ru" method="POST" class="form">
+
+        <!-- Остальные модификаторы добавлю на стадии стилизации.В принципе,мне и сейчас понятно где они нужны,но
+        непосредсвенно при стилизации будет ещё понятней)  -->
+        <ul class="form__list form__list--identification">
+          <li class="form__item">
+            <legend class="visually-hidden">Ваши данные</legend>
+            <label class="form__label">Фамилия:
+              <input type="text" name="surname-field" class="form__input" placeholder="Укажите фамилию *">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">Имя:
+              <input type="text" name="name-field" class="form__input" placeholder="Введите ваше имя *">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">Отчество:
+              <input type="text" name="patronymic-field" class="form__input" placeholder="Ну и отчество тоже">
+            </label>
+          </li>
+        </ul>
+
+        <h2 class="form__tittle">Ваши безбашенные достижения в путешествии</h2>
+
+        <ul class="form__list form__list--achievements">
+          <li class="form__item">
+            <label class="form__label">Сделал селфи с акулой
+              <input type="checkbox" name="selfie" class="form__input">
+            </label>
+          </li>
+
+
+          <li class="form__item">
+            <label class="form__label">Обгорел на пляже
+              <input type="checkbox" name="Burned" class="form__input">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">Видел Чака Норриса
+              <input type="checkbox" name="Saw-Chuck-Norris" class="form__input">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">Накупил сувениров
+              <input type="checkbox" name="souvenirs" class="form__input">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">Удержал башню
+              <input type="checkbox" name="Held-the-tower" class="form__input">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">Разгромил отель
+              <input type="checkbox" name="Trashed-the-hotel" class="form__input">
+            </label>
+          </li>
+        </ul>
+
+        <ul class="form__list form__list--contacts">
+          <h2 class="form__tittle">Ваши контакты</h2>
+
+          <li class="form__item">
+            <label class="form__label">НОМЕР ТЕЛЕФОНА
+              <input class="form__input" type="number" name="phone-number" placeholder="Номер, пожалуйста">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">АДРЕС ПОЧТЫ
+              <input class="form__input" type="email" name="email" placeholder="Введите почту *">
+            </label>
+          </li>
+        </ul>
+
+        <ul class="form__list form__list--platform">
+          <h2 class="form__tittle">С каким приложением путешествовали?</h2>
+
+          <li class="form__item">
+            <label class="platform_label">Pink для iOS
+              <input type="radio" name="platform-name" value="IOS" class="form__input">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="platform_label">Pink на Android
+              <input type="radio" name="platform-name" value="Android" class="form__input">
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="platform_label">Windows Phone
+              <input type="radio" name="platform-name" value="Windows" class="form__input">
+            </label>
+          </li>
+        </ul>
+
+        <label class="form__label">ОПИШИТЕ СВОИ ЭМОЦИИ
+          <textarea name="textarea-emotion" class="form__textarea" placeholder="Можно прям в красках, не
+          стесняясь в выражениях"></textarea>
+        </label>
+        <button type="submit" class="forms__button">Отправить форму</button>
+        <p class="form__text">* — обязательные поля</p>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a>
+      <img src="" alt="Pink" class="footer__logo">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link social__link--twitter">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--fb">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link social__link--youtube">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+    <div class="developer">
+      <a class="developer__link">Разработано</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
