@@ -1,0 +1,75 @@
+.intro {
+  padding-top: 29px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 104px;
+    padding-bottom: 130px;
+  }
+}
+
+.intro__text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.intro__button {
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.intro__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  background-color: $bg-blue;
+}
+
+.intro__item {
+  width: 47px;
+  height: 56px;
+
+  background-image: url("../img/icons/apple-logo.svg");
+  background-repeat: no-repeat;
+
+  &:nth-of-type(2) {
+    background-image: url("../img/icons/android-logo.svg");
+  }
+
+  &:nth-of-type(3) {
+    background-image: url("../img/icons/microsoft-logo.svg");
+  }
+}

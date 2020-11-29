@@ -1,0 +1,51 @@
+.price {
+  color: $dark-blue;
+  background-color: $beige;
+
+  padding-top: 140px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 115px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 157px;
+    padding-bottom: 98px;
+  }
+}
+
+.price__table {
+  background-color: $white;
+}
+
+.price__rate {
+  background-color: $dark-blue;
+  color: $white;
+
+  &:first-of-type {
+    background-color: $white;
+  }
+}
+
+.price__value {
+  &:first-of-type {
+    font-weight: 700;
+    font-size: 16px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
+  }
+}
+
+.price__field {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
