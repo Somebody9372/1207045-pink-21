@@ -1,5 +1,5 @@
 .features {
-  background-color: beige;
+  background-color: $color-beige-100;
 
   padding-top: 46px;
   padding-bottom: 70px;
@@ -11,7 +11,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: $dark-blue;
+  color: $color-blue-600;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;

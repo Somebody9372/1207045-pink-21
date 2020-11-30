@@ -38,7 +38,7 @@
   font-size: 18px;
   line-height: 18px;
 
-  color: $white;
+  color: $color-white;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -55,7 +55,7 @@
   margin: 0;
   padding: 0;
 
-  background-color: $bg-blue;
+  background-color: $color-blue-700;
 }
 
 .intro__item {

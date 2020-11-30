@@ -18,7 +18,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    color: $black;
+    color: $color-black;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 24px;
-    color: $dark-blue;
+    color: $color-blue-600;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +44,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 24px;
-    color: $light-red;
+    color: $color-red;
   }
 
   @media (min-width: $desktop-width) {
