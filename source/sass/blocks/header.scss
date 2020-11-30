@@ -1,0 +1,16 @@
+.header {
+  background-image: url("../img/header-mobile.png");
+  background-color: $color-blue-600;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro-tablet.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/header-desctop.png");
+  }
+}

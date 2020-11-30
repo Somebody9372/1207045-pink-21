@@ -1,0 +1,9 @@
+.developer__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-blue-600;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
