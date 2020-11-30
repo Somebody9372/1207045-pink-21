@@ -1,6 +1,6 @@
 .price {
-  color: $dark-blue;
-  background-color: $beige;
+  color: $color-blue-600;
+  background-color: $color-beige-100;
 
   padding-top: 140px;
   padding-bottom: 49px;
@@ -17,15 +17,15 @@
 }
 
 .price__table {
-  background-color: $white;
+  background-color: $color-white;
 }
 
 .price__rate {
-  background-color: $dark-blue;
-  color: $white;
+  background-color: $color-blue-600;
+  color: $color-white;
 
   &:first-of-type {
-    background-color: $white;
+    background-color: $color-white;
   }
 }
 
@@ -43,7 +43,7 @@
 .price__field {
   font-size: 14px;
   line-height: 30px;
-  color: $dark-blue;
+  color: $color-blue-600;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
