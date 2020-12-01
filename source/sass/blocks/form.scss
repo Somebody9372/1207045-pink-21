@@ -4,40 +4,125 @@
   padding: 0;
 }
 
+.form_list {
+  .form__label {
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-red;
+  }
+
+  .form__input {
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-blue-600;
+
+    &::placeholder {
+      color: $color-blue-600;
+      opacity: 1;
+    }
+  }
+}
+
+.form__list--achievements {
+  background-color: $color-beige-100;
+
+  .form__label {
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-blue-600;
+
+    @media (min-width: $tablet-width) {
+      line-height: 30;
+    }
+  }
+}
+
+
 .form__list--identification {
 
   .form__label {
     font-size: 14px;
     line-height: 30px;
-    color: $light-red;
-
+    color: $color-red;
 
     @media (min-width: $tablet-width) {
-
-    }
-
-    @media (min-width: $desktop-width) {
-
+      line-height: 30;
     }
   }
 
-  // .form__input {
-  //   &::-moz-placeholder {
-  //     font-size: 18px;
-  //     line-height: 30px;
-  //     color: #283645;
-  //   }
+  .form__input {
+    font-size: 18px;
+    line-height: 30px;
 
-  //   &::-webkit-input-placeholder {
-  //     // color: red;
-  //   }
-  // }
+    @media (min-width: $tablet-width) {
+      line-height: 30;
+    }
+
+    &::placeholder {
+      color: $color-blue-600;
+      opacity: 1;
+    }
+  }
 }
 
-.form__input::-webkit-input-placeholder {
-  color:  red;
+.form__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-red;
 }
 
-.form__input::-moz-placeholder  {
-  color:  red;
+.form__list--achievements {
+  background-color: $color-beige-100;
+
+  .form__label {
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-blue-600;
+
+    @media (min-width: $tablet-width) {
+      line-height: 30;
+    }
+  }
+}
+
+.form__list--contacts {
+  .form__label {
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-red;
+  }
+
+  .form__input {
+
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-blue-600;
+
+    @media (min-width: $tablet-width) {
+      line-height: 30;
+    }
+
+    &::placeholder {
+      color: $color-blue-600;
+      opacity: 1;
+    }
+  }
+}
+
+.form__list--platform {
+  .form__label {
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-red;
+
+    @media (min-width: $tablet-width) {
+      line-height: 30;
+    }
+
+    .form__input {
+      font-size: 18px;
+      line-height: 30px;
+      color: $color-blue-600;
+    }
+  }
 }
