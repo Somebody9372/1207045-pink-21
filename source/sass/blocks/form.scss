@@ -1,0 +1,96 @@
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.form__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-red;
+  text-transform: uppercase;
+}
+
+.form__input {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-blue-600;
+}
+
+.form__list--identification {
+
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-red;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30;
+  }
+}
+
+.form__list--achievements {
+  background-color: $color-beige-100;
+
+  .form__label {
+    line-height: 30px;
+  }
+}
+
+.form__list--contacts {
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
+
+.form__input--number {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+  // не нашёл решения без префиксов
+}
+
+.form__list--platform {
+  background-color: $color-beige-100;
+}
+
+.form__list--emotion {
+  .form__label {
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
+
+.form__textarea {
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue-600;
+}
