@@ -24,7 +24,10 @@
 }
 
 .form__list--identification {
+
   &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
     color: $color-blue-600;
     opacity: 1;
   }
@@ -49,92 +52,50 @@
   }
 }
 
-
-.form__list--identification {
-
-  .form__label {
-    font-size: 14px;
-    line-height: 30px;
-    color: $color-red;
-
-    @media (min-width: $tablet-width) {
-      line-height: 30;
-    }
-  }
-
-  .form__input {
-    font-size: 18px;
-    line-height: 30px;
-
-    @media (min-width: $tablet-width) {
-      line-height: 30;
-    }
-
-    &::placeholder {
-      color: $color-blue-600;
-      opacity: 1;
-    }
-  }
-}
-
-.form__title {
-  font-size: 14px;
-  line-height: 18px;
-  color: $color-red;
-}
-
-.form__list--achievements {
-  background-color: $color-beige-100;
-
-  .form__label {
-    font-size: 18px;
-    line-height: 30px;
-    color: $color-blue-600;
-
-    @media (min-width: $tablet-width) {
-      line-height: 30;
-    }
-  }
-}
-
 .form__list--contacts {
-  .form__label {
-    font-size: 14px;
-    line-height: 30px;
-    color: $color-red;
-  }
-
-  .form__input {
-
-    font-size: 18px;
-    line-height: 30px;
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
     color: $color-blue-600;
-
-    @media (min-width: $tablet-width) {
-      line-height: 30;
-    }
-
-    &::placeholder {
-      color: $color-blue-600;
-      opacity: 1;
-    }
+    opacity: 1;
   }
+}
+
+.form__input--number {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+  // не нашёл решения без префиксов
 }
 
 .form__list--platform {
+  background-color: $color-beige-100;
+}
+
+.form__list--emotion {
   .form__label {
-    font-size: 14px;
-    line-height: 18px;
-    color: $color-red;
-
-    @media (min-width: $tablet-width) {
-      line-height: 30;
-    }
-
-    .form__input {
-      font-size: 18px;
-      line-height: 30px;
-      color: $color-blue-600;
-    }
+    line-height: 30px;
   }
+
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
+
+.form__textarea {
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
+
+.form__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue-600;
 }
