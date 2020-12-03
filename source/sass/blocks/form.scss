@@ -2,6 +2,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
 }
 
 
@@ -19,12 +24,18 @@
 }
 
 .form__list--identification {
+  border: none;
+  padding-top: 55px;
+  padding-bottom: 44px;
 
   &::placeholder {
-    font-size: inherit;
-    line-height: inherit;
     color: $color-blue-600;
     opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 82px;
+    padding-bottom: 65px;
   }
 }
 
@@ -35,7 +46,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    line-height: 30;
+    line-height: 30px;
   }
 }
 
@@ -49,22 +60,17 @@
 
 .form__list--contacts {
   &::placeholder {
-    font-size: inherit;
-    line-height: inherit;
     color: $color-blue-600;
     opacity: 1;
   }
 }
 
-.form__input--number {
-  -webkit-appearance: none;
-  -moz-appearance: textfield;
-  margin: 0;
-  // не нашёл решения без префиксов
-}
-
 .form__list--platform {
   background-color: $color-beige-100;
+
+  // @media (min-width: $tablet-width) {
+  //   line-height: 30px;
+  // }
 }
 
 .form__list--emotion {
@@ -73,8 +79,6 @@
   }
 
   &::placeholder {
-    font-size: inherit;
-    line-height: inherit;
     color: $color-blue-600;
     opacity: 1;
   }
@@ -82,8 +86,6 @@
 
 .form__textarea {
   &::placeholder {
-    font-size: inherit;
-    line-height: inherit;
     color: $color-blue-600;
     opacity: 1;
   }
