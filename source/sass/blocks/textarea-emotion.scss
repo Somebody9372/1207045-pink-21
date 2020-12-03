@@ -1,0 +1,9 @@
+.textarea-emotion {
+  @include label;
+  color: $color-red;
+  text-transform: uppercase;
+}
+
+.textarea-emotion__field {
+  @include input;
+}

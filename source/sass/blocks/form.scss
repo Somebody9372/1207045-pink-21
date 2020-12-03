@@ -2,41 +2,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    border: 2px solid #e5e5e5;
-    border-radius: 1px;
-  }
-}
-
-
-.form__label {
-  font-size: 14px;
-  line-height: 30px;
-  color: $color-red;
-  text-transform: uppercase;
-}
-
-.form__input {
-  font-size: 18px;
-  line-height: 30px;
-  color: $color-blue-600;
-}
-
-.form__list--identification {
-  border: none;
-  padding-top: 55px;
-  padding-bottom: 44px;
-
-  &::placeholder {
-    color: $color-blue-600;
-    opacity: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 82px;
-    padding-bottom: 65px;
-  }
 }
 
 .form__title {
@@ -44,6 +9,7 @@
   line-height: 18px;
   color: $color-red;
   text-transform: uppercase;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
@@ -58,41 +24,6 @@
   }
 }
 
-.form__list--contacts {
-  &::placeholder {
-    color: $color-blue-600;
-    opacity: 1;
-  }
-}
-
 .form__list--platform {
   background-color: $color-beige-100;
-
-  // @media (min-width: $tablet-width) {
-  //   line-height: 30px;
-  // }
-}
-
-.form__list--emotion {
-  .form__label {
-    line-height: 30px;
-  }
-
-  &::placeholder {
-    color: $color-blue-600;
-    opacity: 1;
-  }
-}
-
-.form__textarea {
-  &::placeholder {
-    color: $color-blue-600;
-    opacity: 1;
-  }
-}
-
-.form__text {
-  font-size: 14px;
-  line-height: 30px;
-  color: $color-blue-600;
 }
