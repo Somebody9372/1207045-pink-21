@@ -1,9 +1,0 @@
-.contacts-field__text {
-  @include label;
-  color: $color-red;
-  text-transform: uppercase;
-}
-
-.contacts-field__input {
-  @include input;
-}

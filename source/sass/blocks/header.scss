@@ -14,3 +14,14 @@
     background-image: url("../img/header-desctop.png");
   }
 }
+
+.header--form {
+  .header__text {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}

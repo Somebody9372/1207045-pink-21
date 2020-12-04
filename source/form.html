@@ -10,7 +10,7 @@
 
 <body class="body">
 
-  <header class="header">
+  <header class="header header--form">
     <nav class="nav">
       <a>
         <img src="" class="nav__logo" alt="PINK" class="nav__logo">
@@ -46,31 +46,27 @@
       <form action="echo.htmlacademy.ru" method="POST" class="form">
 
         <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Ваши данные</legend>
+
           <ul class="form__list form__list--identification">
             <li class="form__item">
-              <legend class="visually-hidden">Ваши данные</legend>
-
-              <!-- Что скажешь по поводу такого решения? -->
-              <!-- Что-то мне кажется фигни налепил =\ -->
-
-              <label class="identification">
-                <span class="identification__text">Фамилия:</span>
-                <input type="text" name="surname-field" class="identification__input" placeholder="Укажите фамилию *">
+              <label class="text-field">
+                <span class="text-field__text">Фамилия:</span>
+                <input type="text" name="surname-field" class="text-field__input" placeholder="Укажите фамилию *">
               </label>
             </li>
 
             <li class="form__item">
-              <label class="identification">
-                <span class="identification__text">Имя:</span>
-                <input type="text" name="name-field" class="identification__input" placeholder="Введите ваше имя *">
+              <label class="text-field">
+                <span class="text-field__text">Имя:</span>
+                <input type="text" name="name-field" class="text-field__input" placeholder="Введите ваше имя *">
               </label>
             </li>
 
             <li class="form__item">
-              <label class="identification">
-                <span class="identification__text">Отчество:</span>
-                <input type="text" name="patronymic-field" class="identification__input"
-                  placeholder="Ну и отчество тоже">
+              <label class="text-field">
+                <span class="text-field__text">Отчество:</span>
+                <input type="text" name="patronymic-field" class="text-field__input" placeholder="Ну и отчество тоже">
               </label>
             </li>
           </ul>
@@ -131,17 +127,17 @@
             <h2 class="visually-hidden">Ваши контакты</h2>
 
             <li class="form__item">
-              <label class="contacts-field">
-                <span class="contacts-field__text">Номер телефона</span>
-                <input class="contacts-field__input contacts-field__input--number" type="text" name="phone-number"
+              <label class="text-field">
+                <span class="text-field__text">Номер телефона</span>
+                <input class="text-field__input text-field__input--number" type="text" name="phone-number"
                   placeholder="Номер, пожалуйста">
               </label>
             </li>
 
             <li class="form__item">
-              <label class="contacts-field">
-                <span class="contacts-field__text">Адрес почты</span>
-                <input class="contacts-field__input" type="email" name="email" placeholder="Введите почту *">
+              <label class="text-field">
+                <span class="text-field__text">Адрес почты</span>
+                <input class="text-field__input" type="email" name="email" placeholder="Введите почту *">
               </label>
             </li>
           </ul>
@@ -152,20 +148,23 @@
             <h2 class="form__title">С каким приложением путешествовали?</h2>
 
             <li class="form__item">
-              <label class="platform">Pink для iOS
-                <input type="radio" name="platform-name" value="IOS" class="platform__input">
+              <label class="radio-buttons">
+                <span class="radio-buttons__text">Pink для iOS</span>
+                <input type="radio" name="platform-name" value="IOS" class="radio-buttons__input">
               </label>
             </li>
 
             <li class="form__item">
-              <label class="platform"><span class="platform__text">Pink на Android</span>
-                <input type="radio" name="platform-name" value="Android" class="platform__input">
+              <label class="radio-buttons">
+                <span class="radio-buttons__text">Pink на Android</span>
+                <input type="radio" name="platform-name" value="Android" class="radio-buttons__input">
               </label>
             </li>
 
             <li class="form__item">
-              <label class="platform"><span class="platform__text">Windows Phone</span>
-                <input type="radio" name="platform-name" value="Windows" class="platform__input">
+              <label class="radio-buttons">
+                <span class="radio-buttons__text">Windows Phone</span>
+                <input type="radio" name="platform-name" value="Windows" class="radio-buttons__input">
               </label>
             </li>
           </ul>
@@ -176,7 +175,8 @@
           стесняясь в выражениях"></textarea>
         </label>
         <button type="submit" class="forms__button">Отправить форму</button>
-        <p class="form__text">* — обязательные поля</p>
+        <p class="form__text"><span class="form__text-sumbol">*</span> — Обязательные поля</p>
+        <!-- Можно ли было тут применить модификатор form__text--sumbol? -->
       </form>
 
     </section>
