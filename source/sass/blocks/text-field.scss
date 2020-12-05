@@ -1,0 +1,19 @@
+.text-field {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-red;
+
+  text-transform: uppercase;
+}
+
+.text-field__input {
+  font-size: 18px;
+  line-height: 30px;
+
+  &::placeholder {
+    color: $color-blue-600;
+    opacity: 1;
+    border: 2px solid $color-beige-200;
+    border-radius: 1px;
+  }
+}

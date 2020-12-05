@@ -1,0 +1,33 @@
+.forms__intro {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue-600;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+
+.forms__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: $color-white;
+  background-color: $color-green;
+  border: 2px solid $color-green;
+  border-radius: 1px;
+
+  padding-top: 23px;
+  padding-bottom: 23px;
+  // min-width: 276px;
+
+  // @media (min-width: $tablet-width) {
+  //   min-width: 296px;
+  // }
+}
