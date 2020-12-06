@@ -1,0 +1,16 @@
+.textarea-emotion {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-red;
+  text-transform: uppercase;
+}
+
+.textarea-emotion__field {
+  font-size: 18px;
+  line-height: 30px;
+
+  &::placeholder {
+    color: $color-blue-600;
+    opacity: 1;
+  }
+}
