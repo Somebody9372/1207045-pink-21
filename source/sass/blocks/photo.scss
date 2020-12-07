@@ -1,12 +1,10 @@
 .photo {
   font-size: 14px;
   line-height: 24px;
+  background-color: $color-beige-100;
 }
 
-// между обёрткой и фото есть странный отступ...маргины выпадать не могут,т.к. их нет,отступов по умолчанию у img нет...
-
 .photo__wrapper {
-  background-color: $color-beige-100;
   padding-top: 25px;
 }
 
