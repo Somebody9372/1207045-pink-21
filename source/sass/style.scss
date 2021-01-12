@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "global.scss";
 @import "fonts.scss";
+@import "blocks/container.scss";
 @import "blocks/body.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -26,3 +27,4 @@
 @import "blocks/post.scss";
 @import "blocks/slogan.scss";
 @import "blocks/intro-text.scss";
+@import "mixins.scss";
