@@ -6,8 +6,10 @@
 
   color: $color-white;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/intro-tablet.png");
+    background-image: url("../img/header-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -34,5 +36,3 @@
 
   padding-top: 36px;
 }
-// Может быть тут следует отделить этот текст в отдельный бэм-блок,что бы не повторять стили?
-// Только тогда нужно будет задавать хэдеру модификаторы,и стилизовать через вложенность в них,т.к. на бОльшей ширине экрана стили будут уже разные

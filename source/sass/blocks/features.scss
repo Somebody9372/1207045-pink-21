@@ -1,8 +1,16 @@
 .features {
   background-color: $color-beige-100;
 
-  padding-top: 46px;
   padding-bottom: 70px;
+
+  text-align: center;
+}
+
+.features__top {
+  background-color: $color-white;
+
+  padding-top: 45px;
+  padding-bottom: 30px;
 }
 
 .features__text {
@@ -13,19 +21,28 @@
   line-height: 29px;
   color: $color-blue-600;
 
+  margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 54px;
 
-    padding-top: 58px;
-    padding-bottom: 46px;
+    margin-bottom: 0;
+
+    &:nth-of-type(2) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
 
-    padding-top: 72px;
     padding-bottom: 72px;
+
+    &:first-of-type {
+      padding-bottom: 0;
+    }
   }
 }
