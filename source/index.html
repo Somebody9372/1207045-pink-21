@@ -36,29 +36,29 @@
     <section class="intro">
       <div class="intro__container container">
         <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-        <a href="#" class="intro__button">Скачать приложение</a>
       </div>
-      <ul class="intro__list">
+      <div class="intro__wrapper">
         <div class="intro__container container">
-          <li class="intro__item">
-            <a href="#" class="intro__link">
-              <span class="visually-hidden">Скачать версию приложения для IOS</span>
-            </a>
-          </li>
-          <li class="intro__item">
-            <a href="#" class="intro__link">
-              <span class="visually-hidden">Скачать версию приложения для Android</span>
-            </a>
-          </li>
-          <li class="intro__item">
-            <a href="#" class="intro__link">
-              <span class="visually-hidden">Скачать версию приложения для Windows</span>
-            </a>
-          </li>
+          <a href="#" class="intro__button">Скачать приложение</a>
+          <ul class="intro__list">
+            <li class="intro__item">
+              <a href="#" class="intro__link">
+                <span class="visually-hidden">Скачать версию приложения для IOS</span>
+              </a>
+            </li>
+            <li class="intro__item">
+              <a href="#" class="intro__link">
+                <span class="visually-hidden">Скачать версию приложения для Android</span>
+              </a>
+            </li>
+            <li class="intro__item">
+              <a href="#" class="intro__link">
+                <span class="visually-hidden">Скачать версию приложения для Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </ul>
-      <div class="intro__container container">
-        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
     <!-- По моему с количеством обёрткок это костыль конечно,но как по другому решить проблему с тянущимися фонами? -->
@@ -68,14 +68,17 @@
   <main class="main">
     <h1 class="visually-hidden">Pink - приложение для хранения фотографии</h1>
     <section class="features">
-      <div class="features__container container">
-        <h2 class="visually-hidden">Преимущеста приложения Pink</h2>
-        <p class="features__text">Устали от серости мегаполиса?
-        </p>
-        <p class="features__text">Нам есть, что вам предложить!</p>
-      </div>
-      <ul class="advantages">
+      <div class="features__top">
         <div class="features__container container">
+          <h2 class="visually-hidden">Преимущеста приложения Pink</h2>
+          <p class="features__text">Устали от серости мегаполиса?
+          </p>
+          <p class="features__text">Нам есть, что вам предложить!</p>
+        </div>
+      </div>
+
+      <div class="features__container container">
+        <ul class="advantages">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
@@ -92,23 +95,27 @@
             <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
-      </ul>
+        </ul>
+      </div>
+    </section>
+
+    <section class="effect">
+      <div class="effect__container container">
+        <div class="effect__wrapper">
+          <h2 class="effect__title">Эффект на 24 часа!</h2>
+          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от
+            использования приложения длится целые сутки!</p>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
 
     <div class="container">
-      <!-- Тут сделал один контейнер для двух секций,что бы уж сосвсем не плодить обёртки -->
-      <section class="effect">
-        <h2 class="effect__title">Эффект на 24 часа!</h2>
-        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от
-          использования приложения длится целые сутки!</p>
-        <a href="#" class="effect__link">Узнать больше об исследовании</a>
-      </section>
-
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении pink</h2>
         <div class="reviews__item">
           <p class="reviews__author">Николай Петров</p>
+          <p class="reviews__info">25 лет, водитель трамвая</p>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые
             вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -123,6 +130,7 @@
 
         <div class="reviews__item">
           <p class="reviews__author">Игорь Николаев</p>
+          <p class="reviews__info">25 лет, водитель трамвая</p>
           <p class="reviews__text">«Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Quis minus, animi facere, ut aliquam, totam delectus accusamus similique a earum eligendi aliquid!»</p>
         </div>
@@ -143,7 +151,7 @@
         <table class="price__table">
           <thead class="price__thead">
             <tr>
-              <th class="price__rate"></th>
+              <th class="price__rate price__rate--title"></th>
 
               <th class="price__rate">
                 <p class="price__value price__value--top">База</p>
@@ -161,22 +169,50 @@
           </thead>
           <tbody>
             <tr>
-              <td class="price__field">Розовый фильтр</td>
-              <td class="price__field"><span class="visually-hidden">Опция включена в пакет</span></td>
-              <td class="price__field"><span class="visually-hidden">Опция включена в пакет</span></td>
-              <td class="price__field"><span class="visually-hidden">Опция включена в пакет</span></td>
+              <td class="price__field price__field--title">Розовый фильтр</td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Розовый фильтр</p>
+                <span class="visually-hidden">Опция включена в пакет</span>
+              </td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Розовый фильтр</p>
+                <span class="visually-hidden">Опция включена в пакет</span>
+              </td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Розовый фильтр</p>
+                <span class="visually-hidden">Опция включена в пакет</span>
+              </td>
             </tr>
             <tr>
-              <td class="price__field">Смайлики</td>
-              <td class="price__field"><span class="visually-hidden">Опция не включена в пакет</span></td>
-              <td class="price__field"><span class="visually-hidden">Опция включена в пакет</span></td>
-              <td class="price__field"><span class="visually-hidden">Опция включена в пакет</span></td>
+
+              <td class="price__field price__field--title">Смайлики</td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Смайлики</p>
+                <span class="visually-hidden">Опция не включена в пакет</span>
+              </td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Смайлики</p>
+                <span class="visually-hidden">Опция включена в пакет</span>
+              </td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Смайлики</p>
+                <span class="visually-hidden">Опция включена в пакет</span>
+              </td>
             </tr>
             <tr>
-              <td class="price__field">Комментарии</td>
-              <td class="price__field"><span class="visually-hidden">Опция не включена в пакет</span></td>
-              <td class="price__field"><span class="visually-hidden">Опция не включена в пакет</span></td>
-              <td class="price__field"><span class="visually-hidden">Опция включена в пакет</span></td>
+              <td class="price__field price__field--title">Комментарии</td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Комментарии</p>
+                <span class="visually-hidden">Опция не включена в пакет</span>
+              </td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Комментарии</p>
+                <span class="visually-hidden">Опция не включена в пакет</span>
+              </td>
+              <td class="price__field">
+                <p class="price__text price__text--off">Комментарии</p>
+                <span class="visually-hidden">Опция включена в пакет</span>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -186,28 +222,42 @@
     <section class="contacts">
       <div class="contacts__container container">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__intro-text">Остались вопросы?</p>
-        <p class="contacts__intro-text">Свяжитесь с нами!</p>
+        <!-- <p class="contacts__intro-text">Остались вопросы?</p>
+        <p class="contacts__intro-text">Свяжитесь с нами!</p> -->
 
-        <p class="contacts__text">
-          Звоните:
-        </p>
-        <a class="contacts__link">
-          +7 (812) 555-66-66
-        </a>
-        <p class="contacts__text">
-          Пишите:
-        </p>
-        <a class="contacts__link">
-          mail@htmlacademy.ru
-        </a>
-        <p class="contacts__text">
-          Приезжайте в гости:
-        </p>
-        <a class="contacts__link">
-          ул. Большая
-          Конюшенная, 19/8
-        </a>
+        <p class="contacts__intro-text">Остались вопросы?<br>
+          Свяжитесь с нами!</p>
+
+        <ul class="contacts__list">
+
+          <li class="contacts__item">
+            <p class="contacts__text">
+              Звоните:
+            </p>
+            <a class="contacts__link">
+              +7 (812) 555-66-66
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <p class="contacts__text">
+              Пишите:
+            </p>
+            <a class="contacts__link">
+              mail@htmlacademy.ru
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <p class="contacts__text">
+              Приезжайте в гости:
+            </p>
+            <a class="contacts__link">
+              ул. Большая
+              Конюшенная, 19/8
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="map">

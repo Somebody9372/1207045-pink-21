@@ -18,6 +18,15 @@
 
 .price__table {
   background-color: $color-white;
+  border-collapse: collapse;
+
+  width: 300%;
+  transform: translateX(-33.3%);
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    transform: none;
+  }
 }
 
 .price__rate {
@@ -25,7 +34,7 @@
   color: $color-white;
 
   &:first-of-type {
-    background-color: $color-white;
+    background-color: $color-beige-100;
   }
 }
 
@@ -40,12 +49,33 @@
   }
 }
 
+.price__value--bottom {
+  font-weight: 300;
+}
+
 .price__field {
   font-size: 14px;
   line-height: 30px;
   color: $color-blue-600;
 
+  border: 2px solid $color-beige-200;
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
+  }
+}
+
+.price__field--title,
+.price__rate--title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
+}
+
+.price__text--off {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

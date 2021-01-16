@@ -10,6 +10,21 @@
   @media (min-width: $desktop-width) {
     padding-top: 115px;
     padding-bottom: 120px;
+
+    background-color: $color-beige-100;
+  }
+}
+
+.effect__wrapper {
+
+  @media (min-width: $tablet-width) {
+    max-width: 310px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 534px;
+    margin-right: 20px;
   }
 }
 
