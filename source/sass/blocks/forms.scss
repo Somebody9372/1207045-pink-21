@@ -6,12 +6,16 @@
   line-height: 30px;
   color: $color-blue-600;
 
+  text-align: center;
+
+  padding-top: 54px;
+  padding-bottom: 50px;
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
   }
 }
-
 
 .forms__button {
   font-weight: 700;
@@ -25,9 +29,11 @@
 
   padding-top: 23px;
   padding-bottom: 23px;
-  // min-width: 276px;
+  margin-bottom: 45px;
 
-  // @media (min-width: $tablet-width) {
-  //   min-width: 296px;
-  // }
+  min-width: 276px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 296px;
+  }
 }

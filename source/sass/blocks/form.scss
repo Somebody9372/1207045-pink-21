@@ -1,7 +1,88 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.forms__main-container {
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form__container--identification {
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 341px;
+    margin: 0;
+  }
+}
+
+.form__container--platform {
+
+  @media (min-width: $desktop-width) {
+    width: 341px;
+    margin: 0;
+  }
+}
+
+.form__container--contacts {
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
 .form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.form__list--identification {
+
+  .form__item {
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 44px;
+    }
+  }
+}
+
+
+.form__list--achievements {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form__label {
+    line-height: 30px;
+  }
+}
+
+.form__list--platform {
+
+  .form__item {
+    margin-bottom: 62px;
+  }
 }
 
 .form__title {
@@ -10,9 +91,13 @@
 
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: $color-red;
   text-transform: uppercase;
-  font-weight: 400;
+  text-align: center;
+
+  padding-top: 42px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
@@ -22,18 +107,44 @@
 .form__fieldset {
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
-.form__list--achievements {
-  background-color: $color-beige-100;
+.form__fieldset--identification {
 
-  .form__label {
-    line-height: 30px;
+  @media (min-width: $desktop-width) {
+    width: 433px;
   }
 }
 
-.form__list--platform {
+.form__fieldset--achievements {
   background-color: $color-beige-100;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-white;
+  }
+
+  .form__item {
+    @media (min-width: $desktop-width) {
+      // width: 257px;
+      // margin-right: 58px;
+    }
+  }
+
+}
+
+.form__fieldset--platform {
+  background-color: $color-beige-100;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-white;
+    margin-left: auto;
+  }
 }
 
 .form__text {
@@ -43,6 +154,8 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  text-align: center;
 }
 
 .form__text-sumbol {
