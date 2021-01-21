@@ -51,6 +51,21 @@
   padding: 0;
 }
 
+.form__list--contacts {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form__item {
+
+    @media (min-width: $desktop-width) {
+      width: 371px;
+    }
+  }
+}
+
 .form__list--identification {
 
   .form__item {
@@ -65,7 +80,6 @@
   }
 }
 
-
 .form__list--achievements {
 
   @media (min-width: $desktop-width) {
@@ -77,6 +91,7 @@
     line-height: 30px;
   }
 }
+
 
 .form__list--platform {
 
@@ -121,14 +136,12 @@
 .form__fieldset--achievements {
   background-color: $color-beige-100;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     background-color: $color-white;
-    order: 4;
   }
 
-  .form__item {
-    @media (min-width: $desktop-width) {
-    }
+  @media (min-width: $desktop-width) {
+    order: 4;
   }
 }
 
