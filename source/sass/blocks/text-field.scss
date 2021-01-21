@@ -13,12 +13,25 @@
   }
 }
 
+.text-field--contacts {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .text-field__text {
   padding-bottom: 15px;
   padding-left: 24px;
   padding-top: 15px;
 
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .text-field__input {
@@ -45,5 +58,13 @@
 
   &:last-child {
     margin-bottom: 44px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
