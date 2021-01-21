@@ -1,7 +1,103 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.forms__main-container {
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form__container--identification {
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 341px;
+    margin: 0;
+  }
+}
+
+.form__container--platform {
+
+  @media (min-width: $desktop-width) {
+    width: 341px;
+    margin: 0;
+  }
+}
+
+.form__container--contacts {
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
 .form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.form__list--contacts {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form__item {
+
+    @media (min-width: $desktop-width) {
+      width: 371px;
+    }
+  }
+}
+
+.form__list--identification {
+
+  .form__item {
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 44px;
+    }
+  }
+}
+
+
+.form__list--achievements {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form__label {
+    line-height: 30px;
+  }
+}
+
+.form__list--platform {
+
+  .form__item {
+    margin-bottom: 62px;
+  }
 }
 
 .form__title {
@@ -10,9 +106,13 @@
 
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: $color-red;
   text-transform: uppercase;
-  font-weight: 400;
+  text-align: center;
+
+  padding-top: 42px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
@@ -22,18 +122,41 @@
 .form__fieldset {
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
-.form__list--achievements {
-  background-color: $color-beige-100;
+.form__fieldset--identification {
 
-  .form__label {
-    line-height: 30px;
+  @media (min-width: $desktop-width) {
+    width: 433px;
   }
 }
 
-.form__list--platform {
+.form__fieldset--achievements {
   background-color: $color-beige-100;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+}
+
+.form__fieldset--platform {
+  background-color: $color-beige-100;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    order: 2;
+  }
 }
 
 .form__text {
@@ -43,8 +166,27 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    padding-left: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 280px;
+  }
 }
 
 .form__text-sumbol {
   color: $color-red;
+}
+
+.form__text-additional {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }

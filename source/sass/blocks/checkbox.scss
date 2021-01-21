@@ -2,4 +2,12 @@
   font-size: 18px;
   line-height: 30px;
   color: $color-blue-600;
+
+  display: block;
+
+  margin-bottom: 47px;
+
+  &:last-child {
+    margin-bottom: 55px;
+  }
 }

@@ -6,14 +6,65 @@
   text-transform: uppercase;
 }
 
+.text-field--identification {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.text-field--contacts {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.text-field__text {
+  padding-bottom: 15px;
+  padding-left: 24px;
+  padding-top: 15px;
+
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .text-field__input {
   font-size: 18px;
   line-height: 30px;
 
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: 2px solid $color-beige-200;
+  border-radius: 1px;
+
   &::placeholder {
     color: $color-blue-600;
     opacity: 1;
-    border: 2px solid $color-beige-200;
-    border-radius: 1px;
+
+  }
+}
+
+.text-field__input--contacts {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 44px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }

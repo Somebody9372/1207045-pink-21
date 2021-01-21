@@ -12,177 +12,201 @@
 
   <header class="header">
     <nav class="nav">
-      <a>
-        <img src="" class="nav__logo" alt="PINK" class="nav__logo">
-      </a>
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a href="index.html" class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a href="catalog.html" class="nav__link">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="nav__wrapper">
+        <a class="nav__img">
+          <img src="" class="nav__logo" alt="PINK" class="nav__logo">
+        </a>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="catalog.html" class="nav__link">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <p class="header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+
   </header>
 
   <main class="main">
     <h1 class="visually-hidden">Поля с вашими данными,для участия в конкурсе</h1>
     <section class="forms">
-      <p class="forms__intro">
-        Поделитесь своей историей и получите
-        шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!
-      </p>
+      <div class="forms__container container">
+        <p class="forms__intro">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+        </p>
+      </div>
 
-      <form action="echo.htmlacademy.ru" method="POST" class="form">
+      <div class="forms__main-container">
+        <form action="echo.htmlacademy.ru" method="POST" class="form">
 
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Ваши данные</legend>
+          <div class="form__container form__container--identification container">
 
-          <ul class="form__list form__list--identification">
-            <li class="form__item">
-              <label class="text-field">
-                <span class="text-field__text">Фамилия:</span>
-                <input type="text" name="surname-field" class="text-field__input" placeholder="Укажите фамилию *">
-              </label>
-            </li>
+            <fieldset class="form__fieldset form__fieldset--identification">
+              <legend class="visually-hidden">Ваши данные</legend>
 
-            <li class="form__item">
-              <label class="text-field">
-                <span class="text-field__text">Имя:</span>
-                <input type="text" name="name-field" class="text-field__input" placeholder="Введите ваше имя *">
-              </label>
-            </li>
+              <ul class="form__list form__list--identification">
+                <li class="form__item">
+                  <label class="text-field text-field--identification">
+                    <span class="text-field__text">Фамилия:</span>
+                    <input type="text" name="surname-field" class="text-field__input" placeholder="Укажите фамилию *">
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="text-field">
-                <span class="text-field__text">Отчество:</span>
-                <input type="text" name="patronymic-field" class="text-field__input" placeholder="Ну и отчество тоже">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+                <li class="form__item">
+                  <label class="text-field text-field--identification">
+                    <span class="text-field__text">Имя:</span>
+                    <input type="text" name="name-field" class="text-field__input" placeholder="Введите ваше имя *">
+                  </label>
+                </li>
+
+                <li class="form__item">
+                  <label class="text-field text-field--identification">
+                    <span class="text-field__text">Отчество:</span>
+                    <input type="text" name="patronymic-field" class="text-field__input"
+                      placeholder="Ну и отчество тоже">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
 
-        <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+          <fieldset class="form__fieldset form__fieldset--achievements">
 
-        <fieldset class="form__fieldset">
+            <div class="forms__container container">
+              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+              <ul class="form__list form__list--achievements">
+                <li class="form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" name="selfie" class="checkbox__input">
+                    <span class="checkbox__text">Сделал селфи с акулой</span>
+                  </label>
+                </li>
 
-          <ul class="form__list form__list--achievements">
-            <li class="form__item">
-              <label class="checkbox">
-                <span class="checkbox__text">Сделал селфи с акулой</span>
-                <input type="checkbox" name="selfie" class="checkbox__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" name="Burned" class="checkbox__input">
+                    <span class="checkbox__text">Обгорел на пляже</span>
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="checkbox">
-                <span class="checkbox__text">Обгорел на пляже</span>
-                <input type="checkbox" name="Burned" class="checkbox__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" name="Saw-Chuck-Norris" class="checkbox__input">
+                    <span class="checkbox__text">Видел Чака Норриса</span>
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="checkbox">
-                <span class="checkbox__text">Видел Чака Норриса</span>
-                <input type="checkbox" name="Saw-Chuck-Norris" class="checkbox__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" name="souvenirs" class="checkbox__input">
+                    <span class="checkbox__text">Накупил сувениров</span>
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="checkbox">
-                <span class="checkbox__text">Накупил сувениров</span>
-                <input type="checkbox" name="souvenirs" class="checkbox__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" name="Held-the-tower" class="checkbox__input">
+                    <span class="checkbox__text">Удержал башню</span>
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="checkbox">
-                <span class="checkbox__text">Удержал башню</span>
-                <input type="checkbox" name="Held-the-tower" class="checkbox__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="checkbox">
+                    <input type="checkbox" name="Trashed-the-hotel" class="checkbox__input">
+                    <span class="checkbox__text">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
 
-            <li class="form__item">
-              <label class="checkbox">
-                <span class="checkbox__text">Разгромил отель</span>
-                <input type="checkbox" name="Trashed-the-hotel" class="checkbox__input">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <div class="form__container form__container--contacts container">
+            <fieldset class="form__fieldset">
+              <h2 class="visually-hidden">Ваши контакты</h2>
+              <ul class="form__list form__list--contacts">
 
-        <fieldset class="form__fieldset">
-          <ul class="form__list form__list--contacts">
-            <h2 class="visually-hidden">Ваши контакты</h2>
+                <li class="form__item">
+                  <label class="text-field text-field--contacts">
+                    <span class="text-field__text">Номер телефона</span>
+                    <input class="text-field__input text-field__input--contacts" type="text" name="phone-number"
+                      placeholder="Номер, пожалуйста">
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="text-field">
-                <span class="text-field__text">Номер телефона</span>
-                <input class="text-field__input text-field__input--number" type="text" name="phone-number"
-                  placeholder="Номер, пожалуйста">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="text-field text-field--contacts">
+                    <span class="text-field__text">Адрес почты</span>
+                    <input class="text-field__input text-field__input--contacts" type="email" name="email"
+                      placeholder="Введите почту *">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-            <li class="form__item">
-              <label class="text-field">
-                <span class="text-field__text">Адрес почты</span>
-                <input class="text-field__input" type="email" name="email" placeholder="Введите почту *">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="form__fieldset--platform">
+            <div class="form__container form__container--platform container">
+              <h2 class="form__title">С каким приложением путешествовали?</h2>
 
-        <fieldset class="form__fieldset">
-          <ul class="form__list form__list--platform">
-            <h2 class="form__title">С каким приложением путешествовали?</h2>
+              <ul class="form__list form__list--platform">
 
-            <li class="form__item">
-              <label class="radio-buttons">
-                <span class="radio-buttons__text">Pink для iOS</span>
-                <input type="radio" name="platform-name" value="IOS" class="radio-buttons__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="radio-buttons">
+                    <input type="radio" name="platform-name" value="IOS" class="radio-buttons__input">
+                    <span class="radio-buttons__text">Pink для iOS</span>
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="radio-buttons">
-                <span class="radio-buttons__text">Pink на Android</span>
-                <input type="radio" name="platform-name" value="Android" class="radio-buttons__input">
-              </label>
-            </li>
+                <li class="form__item">
+                  <label class="radio-buttons">
+                    <input type="radio" name="platform-name" value="Android" class="radio-buttons__input">
+                    <span class="radio-buttons__text">Pink на Android</span>
+                  </label>
+                </li>
 
-            <li class="form__item">
-              <label class="radio-buttons">
-                <span class="radio-buttons__text">Windows Phone</span>
-                <input type="radio" name="platform-name" value="Windows" class="radio-buttons__input">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+                <li class="form__item">
+                  <label class="radio-buttons">
+                    <input type="radio" name="platform-name" value="Windows" class="radio-buttons__input">
+                    <span class="radio-buttons__text">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </form>
+      </div>
 
-        <label class="textarea-emotion">Опишите свои эмоции
+      <div class="form__container container">
+
+        <label class="textarea-emotion">
+          <span class="textarea-emotion__text">Опишите свои эмоции</span>
           <textarea name="textarea-emotion" class="textarea-emotion__field" placeholder="Можно прям в красках, не
           стесняясь в выражениях"></textarea>
         </label>
         <button type="submit" class="forms__button">Отправить форму</button>
-        <p class="form__text"><span class="form__text-sumbol">*</span> — Обязательные поля</p>
-        <!-- Можно ли было тут применить модификатор form__text--sumbol? -->
-      </form>
+        <p class="form__text">
+          <span class="form__text-sumbol">*</span> — Обязательные
+          <span class="form__text-additional">для заполнения</span> поля
+        </p>
+      </div>
 
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
     <a>
       <img src="" alt="Pink" class="footer__logo">
     </a>
@@ -207,6 +231,7 @@
       <a class="developer__link">Разработано</a>
     </div>
   </footer>
+
 
 </body>
 

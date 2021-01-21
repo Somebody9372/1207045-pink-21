@@ -5,9 +5,27 @@
   text-transform: uppercase;
 }
 
+.textarea-emotion__text {
+  display: block;
+
+  margin-bottom: 22px;
+  margin-top: 42px;
+  text-align: center;
+
+}
+
 .textarea-emotion__field {
   font-size: 18px;
   line-height: 30px;
+
+  width: 100%;
+  min-height: 197px;
+
+  border: 2px solid $color-beige-200;
+  border-radius: 1px;
+
+  margin-bottom: 50px;
+
 
   &::placeholder {
     color: $color-blue-600;
