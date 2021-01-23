@@ -12,38 +12,46 @@
 
   <header class="header">
     <nav class="nav">
-      <a>
-        <img src="" class="nav__logo" alt="PINK" class="nav__logo">
-      </a>
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <a href="index.html" class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--active">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a href="form.html" class="nav__link">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="nav__wrapper">
+        <a class="nav__img">
+          <img src="" class="nav__logo" alt="PINK" class="nav__logo">
+        </a>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a href="form.html" class="nav__link">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a href="https://htmlacademy.ru" class="nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <h1 class="intro-text">Фотографии пользователей</h1>
+    <div class="header__container container">
+      <h1 class="intro-text">Фотографии пользователей</h1>
+    </div>
   </header>
 
   <main class="main">
 
     <section class="gallery">
-      <h2 class="visually-hidden">Фотогалерея</h2>
+      <div class="gallery__container container">
+        <h2 class="visually-hidden">Фотогалерея</h2>
 
-      <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
+        <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</p>
+      </div>
+
+
 
       <ul class="gallery__list">
-        <li class="photo">
+        <li class="photo photo--main">
           <img src="https://via.placeholder.com/320x137" alt="" class="photo__img"></img>
           <p class="photo__autor">Анна</p>
           <span class="photo__time">(5 минут назад)</span>
@@ -105,31 +113,63 @@
 
     </section>
 
+
     <section class="post">
-      <h2 class="visually-hidden">Обработайте и выложите вашу фотографию</h2>
       <p class="post__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="post__container container">
+        <h2 class="visually-hidden">Обработайте и выложите вашу фотографию</h2>
 
-      <img src="https://via.placeholder.com/280x374" alt="" class="post__img">
+        <img src="https://via.placeholder.com/280x374" alt="" class="post__img">
 
-      <button type="button" class="post__toggle"><span class="visyally-hidden">Обрезать фото</span></button>
-      <button type="button" class="post__toggle"><span class="visyally-hidden">Заливка фото</span></button>
-      <button type="button" class="post__toggle"><span class="visyally-hidden">изменять яркость фото</span></button>
 
-      <form action="echo.htmlacademy.ru" method="GET" class="post__form">
+        <form action="echo.htmlacademy.ru" method="GET" class="post__form">
 
-        <div class="range">
-          <div class="range__bar"></div>
-          <div class="range__button"></div>
-        </div>
 
-        <button type="submit" class="post__button post__button--submit">Запостить</button>
-        <button type="reset" class="reset post__button post__button--reset">Отмена</button>
-      </form>
+          <div class="post__wrapper-main">
 
+            <div class="post__wrapper-top">
+
+              <div class="range">
+                <button type="button" class="post__toggle"><span class="visually-hidden">Обрезать фото</span></button>
+                <div class="range__control range__control--visible">
+                  <div class="range__bar"></div>
+                  <div class="range__button"></div>
+                </div>
+              </div>
+
+              <div class="range">
+                <button type="button" class="post__toggle"><span class="visually-hidden">Заливка фото</span></button>
+                <div class="range__control range__control--hidden">
+                  <div class="range__bar"></div>
+                  <div class="range__button"></div>
+                </div>
+              </div>
+
+              <div class="range">
+                <button type="button" class="post__toggle"><span class="visually-hidden">изменять яркость
+                    фото</span></button>
+                <div class="range__control range__control--hidden">
+                  <div class="range__bar"></div>
+                  <div class="range__button"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="post__wrapper-bottom">
+              <button type="submit" class="post__button post__button--submit">Запостить</button>
+              <button type="reset" class="reset post__button post__button--reset">Отмена</button>
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
     <a>
       <img src="" alt="Pink" class="footer__logo">
     </a>

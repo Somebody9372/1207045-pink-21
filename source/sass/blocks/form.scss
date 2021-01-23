@@ -8,16 +8,6 @@
   }
 }
 
-.forms__main-container {
-
-  @media (min-width: $desktop-width) {
-    width: 940px;
-
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .form__container--identification {
 
   @media (min-width: $tablet-width) {
