@@ -115,48 +115,56 @@
 
 
     <section class="post">
+      <p class="post__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="post__container container">
         <h2 class="visually-hidden">Обработайте и выложите вашу фотографию</h2>
-        <p class="post__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
 
         <img src="https://via.placeholder.com/280x374" alt="" class="post__img">
 
-        <div class="post__inner">
 
-          <form action="echo.htmlacademy.ru" method="GET" class="post__form">
-
-            <div class="post__wrapper post__wrapper--top">
+        <form action="echo.htmlacademy.ru" method="GET" class="post__form">
 
 
+          <div class="post__wrapper-main">
 
-
+            <div class="post__wrapper-top">
 
               <div class="range">
                 <button type="button" class="post__toggle"><span class="visually-hidden">Обрезать фото</span></button>
-                <div class="range__bar"></div>
-                <div class="range__button"></div>
+                <div class="range__control range__control--visible">
+                  <div class="range__bar"></div>
+                  <div class="range__button"></div>
+                </div>
               </div>
 
               <div class="range">
                 <button type="button" class="post__toggle"><span class="visually-hidden">Заливка фото</span></button>
-                <div class="range__bar"></div>
-                <div class="range__button"></div>
+                <div class="range__control range__control--hidden">
+                  <div class="range__bar"></div>
+                  <div class="range__button"></div>
+                </div>
               </div>
 
               <div class="range">
                 <button type="button" class="post__toggle"><span class="visually-hidden">изменять яркость
                     фото</span></button>
-                <div class="range__bar"></div>
-                <div class="range__button"></div>
+                <div class="range__control range__control--hidden">
+                  <div class="range__bar"></div>
+                  <div class="range__button"></div>
+                </div>
               </div>
+
             </div>
 
-            <div class="post__wrapper post__wrapper--bottom">
+            <div class="post__wrapper-bottom">
               <button type="submit" class="post__button post__button--submit">Запостить</button>
               <button type="reset" class="reset post__button post__button--reset">Отмена</button>
             </div>
-          </form>
-        </div>
+
+          </div>
+
+        </form>
+
       </div>
     </section>
   </main>

@@ -1,11 +1,22 @@
 .range {
+
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.range__bar {
   background-color: red;
-  width: 240px;
   height: 2px;
 
   @media (min-width: $tablet-width) {
     width: 202px;
-    display: flex;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,5 +30,27 @@
     @media (min-width: $tablet-width) {
       display: block;
     }
+  }
+}
+
+.range__control--visible {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+}
+
+.range__control--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
