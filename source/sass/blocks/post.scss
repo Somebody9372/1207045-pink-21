@@ -1,3 +1,59 @@
 .post {
   background-color: $color-beige-100;
 }
+
+.post__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue-600;
+
+  text-align: center;
+
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.post__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.post__inner {
+  display: flex;
+}
+
+.post__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post__wrapper {
+  display: flex;
+}
+
+.post__wrapper--top {
+  flex-direction: column;
+}
+
+.post__wrapper--bottom {
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.post__toggle {
+  width: 22px;
+  height: 22px;
+}
