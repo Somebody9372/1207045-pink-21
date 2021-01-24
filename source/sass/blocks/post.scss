@@ -1,3 +1,77 @@
 .post {
   background-color: $color-beige-100;
 }
+
+.post__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue-600;
+  background-color: $color-white;
+
+  text-align: center;
+
+  width: 100%;
+
+  padding-top: 49px;
+  padding-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+
+    padding-top: 73px;
+    padding-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 75px;
+  }
+}
+
+.post__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.post__toggle {
+  width: 22px;
+  height: 22px;
+}
+
+.post__wrapper-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin-left: 90px;
+  }
+}
+
+.post__wrapper-top {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 197px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.post__wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+
+   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
