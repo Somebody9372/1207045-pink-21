@@ -2,30 +2,13 @@
   font-size: 14px;
   line-height: 24px;
   background-color: $color-beige-100;
-  // @include container;
+
+  flex-wrap: wrap;
 
   min-height: 301px;
 
-  // display: flex;
-  // flex-direction: column;
-  flex-wrap: wrap;
-
-  // @media (min-width: $tablet-width) {
-  //   &:nth-child(2n) {
-  //     margin-left: auto;
-  //   }
-  // }
-
-  // @media (min-width: $tablet-width) {
-  //   &:nth-child(2n+3) {
-  //     margin-left: auto;
-  //   }
-  // }
-
   @media (min-width: $tablet-width) {
     min-height: 455px;
-
-    width: 300px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,7 +34,7 @@
 
     @media (min-width: $tablet-width) {
       width: 100vw;
-      max-width: 100vw;
+      max-width: none;
 
       position: relative;
       margin-left: -50vw;

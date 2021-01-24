@@ -31,12 +31,11 @@
   padding: 0;
 
   display: grid;
+  @include container;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-
-    @include container;
   }
 
   @media (min-width: $desktop-width) {
